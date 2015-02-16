@@ -1,4 +1,8 @@
 //build a namespace for this
-var Ptolemy = Ptolemy || {};
+var ptolemy = ptolemy || {};
+
+ptolemy.find_path(src, dest) {
+
+}
 
 
