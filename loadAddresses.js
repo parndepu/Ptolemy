@@ -1,8 +1,14 @@
 //build a namespace for this
 var ptolemy = ptolemy || {};
 
-ptolemy.find_path = function(src, dest) {
+//get the list of parking lots
+var ptolemy.get_parking = function() {
 
+}
+
+//get the list of buildings
+var ptolemy.get_buildings = function() {
+	
 }
 
 //load the addresses into javascript memory
