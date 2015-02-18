@@ -1,0 +1,7 @@
+notes
+
+sudo apt-get install php5
+sudo apt-get install php5-mysqlnd
+sudo apt-get install apache2
+sudo apt-get install libapache2-mod-php5
+http://community.linuxmint.com/tutorial/view/486
