@@ -1,0 +1,99 @@
+BLDG_NO,BUILDING_NAME,ABB,STREET_ADDRESS
+9124,122 South College (Trecaso's),TRE,122 College Street
+9002,178 South Forge Street (Wonder Bread),WBB,178 South Forge Street 
+6030,32 South College (Superior Auto Service),SUP,32 South College Street
+9030,464 Carroll Street (TKE Fraternity Lease ),CSBL,464 Carroll Street
+5006,Administrative Services Building,ASB,185 East Mill
+9411,Akron Innovation Campus North,AICN,411 Wolf Ledges
+9441,Akron Innovation Campus South,AICS,441 Wolf Ledges 
+9087,Akron Polymer Training Center  (Foundation),APTC,225 E. Mill Street
+1501,Auburn Science & Engineering Ctr.,ASEC,235 Carroll Street
+1204,Ayer Hall,AYER,250 Buchtel Common
+1102,Ballet Center,BC,354 East Market Street
+1910,Barnett Hoover Farm House,WCBH,"1901 Smucker Road, Orrville"
+6014,Bath Nature Preserve,BNP,4240 Ira Road
+3002,Bierce Library,LIB,315 Buchtel Common
+1705,Buchtel Field Tennis Facility,BFTF,322 Wheeler Street
+4001,Buchtel Hall,BH,302 Buchtel Common
+1902,Buckingham Building,BCCE,220 Wolf Ledges Parkway
+7007,Bulger Hall,BRH,265 Buchtel Common
+1002,Business Admin. Bldg.,CBA,259 S. Broadway Street
+9079,Carriage House,CARR,60 Fir Hill
+5003,Center For Child Development,CCD,108 Fir Hill
+9040,Central Hower Community School,CHCS,145 S. College Street
+9099,Chilled Water Storage Tank,TANK,S. Forge St.
+9020,Chima Family Center,CFC,27 South Forge Street
+1306,College of Arts and Sciences,CAS,290 E. Buchtel Ave.
+6017,Computer Center,COMP,185 Carroll Street
+1201,Crouse Hall,CRH,252 Buchtel Common
+6009,Electric Substation,ESUB,152 Carroll Street
+6013,Exchange Parking Deck,EXPD,207 East Exchange Street
+7008,Exchange Street Residence Hall,EXC,180 East Exchange Street
+1903,Express Building,EB,250 Wolf Ledges Parkway
+6050,FirstEnergy Stadium - Cub Cadet Field,FES,300 Carroll Street
+1108,Folk Hall,FOLK,150 East Exchange Street
+6022,Forge St. Substation,FSUB,270 South Forge Street
+7021,Gallucci Hall (N),GALU,360 Grant Street
+7020,Gallucci Hall (S),GALL,360 Grant Street
+1507,Gas Turbine Testing Facility,GTTF,280 Wolf Ledges Parkway
+1505,Goodyear Polymer Ctr.,GDYR,170 University Avenue
+7013,Grant High Rise,GRC,151 Wheeler Street
+1106,Guzzetta Hall,GH,157 University Avenue
+1109,Guzzetta Hall Addition,GHAD,Buchtel Ave. side of Guzzetta Hall
+6024,Hazardous Material Storage Building,HMST,180 Buchtel Common
+6021,Heisman Lodge,HEIS,800 George Washington
+7001,Honors Complex,HCPX,180 South College Street
+9077,Hower House,HOW,60 Fir Hill
+6040,Info Cision Stadium/Summa Field,ICS,375 East Exchange
+6011,Jackson Field Storage Bldg.,JFST,310 S. Union St.
+1703,James A. Rhodes Health & P.E. Bldg.,JAR,373 Carroll Street
+1202,Knight Chemical Lab.,KNCL,190 Buchtel Common
+1101,Kolbe Hall,KO,328 Buchtel Common
+1301,Leigh Hall,LH,308 Buchtel Common
+9083,Lincoln Bldg.,LINC,100 Lincoln Street
+5005,Louis and Freda Stile Athl Fld Hse,AFLD,289 South Union Street
+5502,Martin University Center (Vacated 9/2013),PMUC,105 Fir Hill
+1702,Mary Gladwin Hall,MGH,209 Carroll Street
+1001,McDowell Law Center,LAW,150 University Avenue
+1909,Medina County University Center,MCUC,"6300 Technology Lane Medina, Ohio 44358                                                                                                      "
+1508,National Polymer Innovation Center,NPIC,240 South Forge Street
+1704,Ocasek Natatorium,ONAT,402 Carroll Street
+1304,Olin Hall,OLIN,361 Buchtel Common
+1107,Olson Research Center,OLRC,260 South Forge Street
+7002,Orr Resident Hall,ORH,188 South College Street
+6025,"Parking Deck, East",PDE,450 E. Buchtel Ave.
+6026,"Parking Deck, North",PDN,255 E. Buchtel Ave.
+6010,Physical Fac. Operations Ctr.,PFOC,146 Hill Street
+5002,Polsky Building,POL,225 S. Main Street
+1506,Polymer Eng. Academic Center,PEAC,250 S. Forge St.
+7024,President's Residence,PRES,465 Burning Tree Drive
+7009,Quaker Square,QSQR,"135 South Broadway Akron, Ohio 44308"
+7004,Ritchie Hall,RRH,269 Buchtel Common
+9001,Roadway Building,RDWY,73 South College Street
+6001,Robertson Hall,RD,248 E. Buchtel Avenue
+1502,Schrank Hall (North),SHN,240 Carroll Street
+1504,Schrank Hall (South),SHS,240 Carroll Street
+4002,Simmons Hall,SI,277 E. Buchtel Ave.
+7005,Sisler-McFawn,SMRH,211 Buchtel Common
+6027,South Campus Parking Deck,PDS,261 East Exchange
+7028,South Hall,SH,353 Grant Street
+7003,Spanton Hall,SRH,190 South College Street
+7022,Spicer Residence Hall,SPCR,290 Spicer Street
+1205,Steiner Woods,STWD,3675 La Mesa Drive Akron OH 44333
+1907,Student Life Building,SLB,"1901 Smucker Road, Orrville"
+5004,Student Recreation and Wellness Center,SRWC,382 Carroll Street
+5007,Student Union,STUN,303 Carroll Street
+9140,The University of Akron Lakewood,UALW,14725 Detroit Ave. Lakewood OH 44107
+1104,Thomas Performing Arts Hall,PAH,198 Hill Street
+7014,Townhouse A,THA,"371, 373, 375, 377 Grant"
+7014,Townhouse B,THB,"380, 382, 384 Sherman"
+7014,Townhouse C,THC,"386, 388, 390, 392 Sherman"
+1509,U of A Engineering Research Center,AERC,264 Wolf Ledges Parkway
+9495,University Akron Research Foundation,UARF,495 Wolf Ledges Parkway Akron 44311
+1901,Wayne College & Boyer H.P.E. Bldg.,UAWC,"1901 Smucker Road, Orrville"
+1908,Wayne College @ Holmes County Higher Ed Ctr,WCHC,"Millersburg, OH"
+1906,Wayne College Maint. Bldg.,WMB,"1901 Smucker Road, Orrville"
+6020,West Campus Parking Deck,WCPD,275 S. High Street
+1105,West Hall,WEST,225 Wolf Ledges Parkway
+1503,Whitby Hall,WHIT,200 Buchtel Common
+1401,Zook Hall,ZOOK,276 Buchtel Common

@@ -1,0 +1,27 @@
+html, body, #map-canvas {
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+}
+
+#map-canvas {
+  width: 70%;
+}
+
+#directions-panel {
+  height: 100%;
+  float: right;
+  width: 29%;
+  overflow: auto;
+}
+
+#control {
+  width: 100%;
+  background: #330066;
+  font-size: 14px;
+  color: white;
+  font-family: Arial;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+}

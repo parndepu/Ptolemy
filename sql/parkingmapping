@@ -1,0 +1,8 @@
+create table ParkingMapping (
+	BLDG_NO int,
+	Lot_num int,
+	Priority int,
+	foreign key(BLDG_NO) references CampusBuildings(BLDG_NO),
+	foreign key(Lot_num) references CampusParkingLots(Lot_num),
+	primary key(BLDG_NO, Lot_num)
+)
