@@ -14,6 +14,8 @@ ptolemy.filteredRoutes = ptolemy.host + "php/filteredPaths.php";
 ptolemy.directionsDisplay;
 ptolemy.directionsService = new google.maps.DirectionsService();
 ptolemy.map;
+ptolemy.stepDisplay;
+ptolemy.markerArray = [];
 
 
 //function fills the endpoints from database
@@ -44,6 +46,8 @@ ptolemy.initialize = function() {
 	
 	ptolemy.directionsDisplay.setPanel(document.getElementById('directions-panel'));
 
+	// Instantiate an info window to hold step text.
+  	ptolemy.stepDisplay = new google.maps.InfoWindow();
 	// var control = document.getElementById('control');
 	// control.style.display = 'block';
 	// ptolemy.map.controls[google.maps.ControlPosition.TOP_LEFT].push(control);
@@ -61,15 +65,42 @@ ptolemy.calcRoute = function() {
 	ptolemy.directionsService.route(request, function(response, status) {
 	    if (status == google.maps.DirectionsStatus.OK) {
 	    	ptolemy.directionsDisplay.setDirections(response);
-		 //  	for (var i = 0, len = response.routes.length; i < len; i++) {
-			//     new google.maps.DirectionsRenderer({
-			//         map: ptolemy.map,
-			//         directions: response,
-			//         routeIndex: i
-			//     });
-			// }
+	    	ptolemy.profitsRoutes(response);
 	    }
 	});
+};
+
+ptolemy.profitsRoutes = function(response) {
+	console.log(response);
+	//get the three possible routes
+	var routes = response.routes;
+	//store the legs arrays
+	var legs = []
+	for(var i = 0; i < routes.length; ++i) {
+		legs[i] = routes[i].legs[0];
+		//console.log(legs[i]);
+	}
+
+	//step 1 of path 1
+	var path = legs[0].steps[5].path;
+	//clear the markers array
+	// First, remove any existing markers from the map.
+	for (var i = 0; i < ptolemy.markerArray.length; i++) {
+    	ptolemy.markerArray[i].setMap(null);
+  	}
+
+  	// Now, clear the array itself.
+  	ptolemy.markerArray = [];
+
+	for(var i = 0; i < path.length; ++i) {
+		var marker = new google.maps.Marker({
+			position: path[i],
+			map: ptolemy.map
+		});
+		var pos = "(" + path[i].lat() + ", " + path[i].lng() + ")";
+		ptolemy.attachInstructionText(marker, pos);
+		ptolemy.markerArray[i] = marker;
+	}
 };
 
 //calculate walking path
@@ -129,4 +160,11 @@ ptolemy.getIdealPaths = function() {};
 // get the routes we dont want people to services
 ptolemy.getAvoidPaths = function() {};
 
-
+ptolemy.attachInstructionText = function(marker, text) {
+  google.maps.event.addListener(marker, 'click', function() {
+    // Open an info window when the marker is clicked on,
+    // containing the text of the step.
+    ptolemy.stepDisplay.setContent(text);
+    ptolemy.stepDisplay.open(ptolemy.map, marker);
+  });
+}
