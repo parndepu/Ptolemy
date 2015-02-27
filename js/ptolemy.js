@@ -66,6 +66,7 @@ ptolemy.calcRoute = function() {
 	    if (status == google.maps.DirectionsStatus.OK) {
 	    	ptolemy.directionsDisplay.setDirections(response);
 	    	ptolemy.profitsRoutes(response);
+	    	ptolemy.getNearestParking(end);
 	    }
 	});
 };
@@ -154,11 +155,62 @@ ptolemy.getParkingAddress = function() {
 	return JSON.stringify(lots);
 };
 
+//get the ideal parking
+//buildingDest is the target building
+ptolemy.getIdealParking = function(buildingDest) {
+
+};
+
+//returns the nearest parking instead of the ideal
+ptolemy.getNearestParking = function(buildingDest) {
+	//JSON parsed object
+	var lots = jQuery.parseJSON(ptolemy.getParkingAddress());
+	var dest = []
+	$.each(lots, function(key, val){
+		//push the address and append Akron,OH just incase
+		//region biasing should prevent any confusion but you never know
+		dest.push(val["address"] + " Akron, OH");
+	});
+
+	ptolemy.calcDistance([buildingDest], dest);
+};
+
 // get the ideal routes parking services wants people to be sent to
 ptolemy.getIdealPaths = function() {};
 
 // get the routes we dont want people to services
 ptolemy.getAvoidPaths = function() {};
+
+ptolemy.calcDistance = function(origin, dest) {
+	var service = new google.maps.DistanceMatrixService();
+	var matrix = {}
+
+	var callback = function(response, status) {
+		if(status != google.maps.DistanceMatrixStatus.OK) {
+    		alert('Error was: ' + status);
+  		} 
+  		else {
+			console.log(response);
+		}
+	};
+
+	//need to splice the parking because the url is too long
+	var destA = dest;
+	var destB = dest.splice(0, dest.length / 2);
+
+	console.log(len(destB));
+
+	$.ajaxSetup( { "async": false } );
+	service.getDistanceMatrix({
+		origins: origin,
+		destinations: destB,
+		travelMode: google.maps.TravelMode.DRIVING
+	}, callback);
+
+	$.ajaxSetup( { "async": true } );
+
+	console.log(matrix);
+};
 
 ptolemy.attachInstructionText = function(marker, text) {
   google.maps.event.addListener(marker, 'click', function() {
