@@ -182,18 +182,46 @@ ptolemy.getIdealPaths = function() {};
 // get the routes we dont want people to services
 ptolemy.getAvoidPaths = function() {};
 
+
+ptolemy.closestLot = {};
+
+ptolemy.reqStatus = null;
+ptolemy.reqStatusCount = 0;
+
+var Lot = {
+	distance: 10000, //arbitrary long distance
+	distanceText: "",
+	address: "" //empty at first
+};
+
+
+ptolemy.closeLotCallback = function(response, status) {
+	if(status != google.maps.DistanceMatrixStatus.OK) {
+		alert('Error was: ' + status);
+	} 
+	else {
+
+		var origin = response.originAddresses;
+		ptolemy.reqStatus = google.maps.DistanceMatrixStatus.OK;
+		ptolemy.reqStatusCount += 1;
+
+		for(var i = 0; i < origin.length; ++i) {
+			var results = response.rows[i].elements;
+			for(var j = 0; j < results.length; ++j) {
+				if(results[j].distance.value < Lot.distance) {
+					Lot.distance = results[j].distance.value;
+					Lot.distanceText = results[j].distance.text;
+					Lot.address = response.destinationAddresses[j];
+				}
+			}
+		}
+
+		ptolemy.closestLot = Lot;
+	}
+};
+
 ptolemy.calcDistance = function(origin, dest) {
 	var service = new google.maps.DistanceMatrixService();
-	var closestLot;
-
-	var callback = function(response, status) {
-		if(status != google.maps.DistanceMatrixStatus.OK) {
-    		alert('Error was: ' + status);
-  		} 
-  		else {
-			console.log(response);
-		}
-	};
 
 	//need to splice the parking to ensure URL not too long
 	//when making request to google
@@ -202,33 +230,48 @@ ptolemy.calcDistance = function(origin, dest) {
 	var destC = destA.splice(0, destA.length / 2);
 	var destD = destB.splice(0, destB.length / 2);
 
-	$.ajaxSetup( { "async": false } );
-
 	service.getDistanceMatrix({
 		origins: origin,
 		destinations: destA,
 		travelMode: google.maps.TravelMode.DRIVING
-	}, callback);
+	}, ptolemy.closeLotCallback);
 
 	service.getDistanceMatrix({
 		origins: origin,
 		destinations: destB,
 		travelMode: google.maps.TravelMode.DRIVING
-	}, callback);
+	}, ptolemy.closeLotCallback);
 
 	service.getDistanceMatrix({
 		origins: origin,
 		destinations: destC,
 		travelMode: google.maps.TravelMode.DRIVING
-	}, callback);
+	}, ptolemy.closeLotCallback);
 
 	service.getDistanceMatrix({
 		origins: origin,
 		destinations: destD,
 		travelMode: google.maps.TravelMode.DRIVING
-	}, callback);
+	}, ptolemy.closeLotCallback);
 
-	$.ajaxSetup( { "async": true } );
+	var breakWait = function() {
+		console.log(ptolemy.reqStatusCount)
+		console.log(ptolemy.closestLot);
+		ptolemy.reqStatusCount = 0;
+		Lot.distance = 10000;
+		Lot.distanceText = "";
+		Lot.address = "";
+		clearInterval(wait);
+		return ptolemy.closestLot;
+	}
+
+	var wait = setInterval(function() {
+		if(ptolemy.reqStatus === google.maps.DistanceMatrixStatus.OK &&
+		   ptolemy.reqStatusCount >= 4) 
+		{
+			breakWait();
+		}
+	}, 10);
 };
 
 ptolemy.attachInstructionText = function(marker, text) {
