@@ -1,18 +1,17 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "ptolemy123";
-$dbname = "ptolemy";
+$servername = "db1.cs.uakron.edu";
+$username = "hvn1";
+$password = "goo0Chah";
+$dbname = "DI_hvn1";
 
 //create the connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-
 //check connection
 if($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * from CampusBuildings";
+$sql = "SELECT * from CampusBuildings order by BUILDING_NAME ASC";
 $result = $conn->query($sql);
 
 $rows = array();

@@ -3,7 +3,7 @@ var ptolemy = ptolemy || {};
 
 //host name
 //changes based on deployment location
-ptolemy.host = "http://localhost/";
+ptolemy.host = "http://pausch.cs.uakron.edu/~hvn1/ptolemy/";
 
 //load the addresses into javascript memory
 ptolemy.buildingAddrUri = ptolemy.host + "php/buildings.php";
@@ -20,7 +20,7 @@ ptolemy.markerArray = [];
 
 //function fills the endpoints from database
 ptolemy.fillEndpoints = function() {
-	var endpoints = jQuery.parseJSON(ptolemy.getBuildingAddress());
+	var endpoints = ptolemy.getBuildingAddress();
 	$.each(endpoints, function(key, val) {
 	  var option = "<option value=\"" + val["address"] + ", Akron, OH\">" + val["name"] + "</option>";
 	  $('#end').append(option);
@@ -48,6 +48,7 @@ ptolemy.initialize = function() {
 
 	// Instantiate an info window to hold step text.
   	ptolemy.stepDisplay = new google.maps.InfoWindow();
+
 	// var control = document.getElementById('control');
 	// control.style.display = 'block';
 	// ptolemy.map.controls[google.maps.ControlPosition.TOP_LEFT].push(control);
@@ -119,40 +120,42 @@ ptolemy.calcWalkPath = function(start, dest) {
 	});
 };
 
-//return a json object
-// has form { building_no : {name, address}, ... }
+//return an 
+// has form [{name, address, bldg_no}, ... ]
 ptolemy.getBuildingAddress = function() {
-	var buildings = {};
+	var buildings = [];
 	$.ajaxSetup( { "async": false } );
 	$.getJSON( ptolemy.buildingAddrUri, function( data ) {
 		$.each( data, function( key, val ) {
-	    	var pair = {
+	    	var bldg = {
 	    		name: val["BUILDING_NAME"],
-	    		address: val["STREET_ADDRESS"]
+	    		address: val["STREET_ADDRESS"],
+	    		bldg_no: val["BLDG_NO"]
 	    	};
-	    	buildings[val["BLDG_NO"]] = pair;
+	    	buildings.push(bldg);
 	  	});
 	});
 	$.ajaxSetup( { "async": true } );
-	return JSON.stringify(buildings);
+	return buildings;
 };
 
 //return a json object
-// has form { lot_num : { name, address },...}
+// has form [ lot_num:{ name, address },...]
 ptolemy.getParkingAddress = function() {
-	var lots = {};
+	var lots = [];
 	$.ajaxSetup( { "async": false } );
 	$.getJSON( ptolemy.lotAddrUri, function( data ) {
 		$.each( data, function( key, val ) {
-	    	var pair = {
+	    	var lot = {
+	    		num: val["Lot_num"],
 	    		name: val["Lot_Name"],
 	    		address: val["Address"]
 	    	};
-	    	lots[val["Lot_num"]] = pair;
+	    	lots.push(lot);
 	  	});
 	});
 	$.ajaxSetup( { "async": true } );
-	return JSON.stringify(lots);
+	return lots;
 };
 
 //get the ideal parking
@@ -164,13 +167,11 @@ ptolemy.getIdealParking = function(buildingDest) {
 //returns the nearest parking instead of the ideal
 ptolemy.getNearestParking = function(buildingDest) {
 	//JSON parsed object
-	var lots = jQuery.parseJSON(ptolemy.getParkingAddress());
-	var dest = []
-	$.each(lots, function(key, val){
-		//push the address and append Akron,OH just incase
-		//region biasing should prevent any confusion but you never know
-		dest.push(val["address"] + " Akron, OH");
-	});
+	var lots = ptolemy.getParkingAddress();
+	var dest = [];
+	for(var i = 0; i < lots.length; ++i) {
+		dest.push(lots[i].address + " Akron, OH");
+	}
 
 	ptolemy.calcDistance([buildingDest], dest);
 };
@@ -183,7 +184,7 @@ ptolemy.getAvoidPaths = function() {};
 
 ptolemy.calcDistance = function(origin, dest) {
 	var service = new google.maps.DistanceMatrixService();
-	var matrix = {}
+	var closestLot;
 
 	var callback = function(response, status) {
 		if(status != google.maps.DistanceMatrixStatus.OK) {
@@ -194,22 +195,40 @@ ptolemy.calcDistance = function(origin, dest) {
 		}
 	};
 
-	//need to splice the parking because the url is too long
+	//need to splice the parking to ensure URL not too long
+	//when making request to google
 	var destA = dest;
 	var destB = dest.splice(0, dest.length / 2);
-
-	console.log(len(destB));
+	var destC = destA.splice(0, destA.length / 2);
+	var destD = destB.splice(0, destB.length / 2);
 
 	$.ajaxSetup( { "async": false } );
+
+	service.getDistanceMatrix({
+		origins: origin,
+		destinations: destA,
+		travelMode: google.maps.TravelMode.DRIVING
+	}, callback);
+
 	service.getDistanceMatrix({
 		origins: origin,
 		destinations: destB,
 		travelMode: google.maps.TravelMode.DRIVING
 	}, callback);
 
-	$.ajaxSetup( { "async": true } );
+	service.getDistanceMatrix({
+		origins: origin,
+		destinations: destC,
+		travelMode: google.maps.TravelMode.DRIVING
+	}, callback);
 
-	console.log(matrix);
+	service.getDistanceMatrix({
+		origins: origin,
+		destinations: destD,
+		travelMode: google.maps.TravelMode.DRIVING
+	}, callback);
+
+	$.ajaxSetup( { "async": true } );
 };
 
 ptolemy.attachInstructionText = function(marker, text) {
@@ -219,4 +238,4 @@ ptolemy.attachInstructionText = function(marker, text) {
     ptolemy.stepDisplay.setContent(text);
     ptolemy.stepDisplay.open(ptolemy.map, marker);
   });
-}
+};
