@@ -1,7 +1,7 @@
 <?php
 $servername = "db1.cs.uakron.edu";
 $username = "hvn1";
-$password = "goo0Chah";
+$password = "xxxxx";
 $dbname = "DI_hvn1";
 
 //create the connection
