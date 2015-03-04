@@ -57,20 +57,49 @@ ptolemy.initialize = function() {
 ptolemy.calcRoute = function() {
 	var start = document.getElementById('start').value;
 	var end = document.getElementById('end').value;
-	var request = {
-	    origin:start,
-	    destination:end,
-	    provideRouteAlternatives: true,
-	    travelMode: google.maps.TravelMode.DRIVING
+
+	Lot.distance = 10000;
+	Lot.address = "";
+	Lot.distanceText = "";
+
+
+	ptolemy.getNearestParking(end);
+
+	var breakWait = function() {
+
+		console.log(ptolemy.closestLot.address);
+
+		var request = {
+	    	origin:start,
+	    	destination: ptolemy.closestLot.address,
+	    	provideRouteAlternatives: true,
+	    	travelMode: google.maps.TravelMode.DRIVING
+		};
+
+		ptolemy.directionsService.route(request, function(response, status) {
+	    	if (status == google.maps.DirectionsStatus.OK) {
+	    		ptolemy.directionsDisplay.setDirections(response);
+	    		ptolemy.profitsRoutes(response);
+	    		console.log(response);
+	    	}
+		});
+
+		clearInterval(wait);
 	};
-	ptolemy.directionsService.route(request, function(response, status) {
-	    if (status == google.maps.DirectionsStatus.OK) {
-	    	ptolemy.directionsDisplay.setDirections(response);
-	    	ptolemy.profitsRoutes(response);
-	    	ptolemy.getNearestParking(end);
-	    }
-	});
+
+
+	var wait = setInterval(function() {
+		if(ptolemy.closeLotFinished === true) 
+		{
+			console.log(ptolemy.closestLot);
+			breakWait();
+		}
+	}, 10);
 };
+
+ptolemy.parseHighwayExit = function() {
+	
+}
 
 ptolemy.profitsRoutes = function(response) {
 	console.log(response);
@@ -173,7 +202,7 @@ ptolemy.getNearestParking = function(buildingDest) {
 		dest.push(lots[i].address + " Akron, OH");
 	}
 
-	ptolemy.calcDistance([buildingDest], dest);
+	ptolemy.calcCloseLot([buildingDest], dest);
 };
 
 // get the ideal routes parking services wants people to be sent to
@@ -183,10 +212,12 @@ ptolemy.getIdealPaths = function() {};
 ptolemy.getAvoidPaths = function() {};
 
 
+// used for asynchronous distance matrix calculations
+// required for calcCloseLot and closeLotCallback
 ptolemy.closestLot = {};
-
 ptolemy.reqStatus = null;
 ptolemy.reqStatusCount = 0;
+ptolemy.closeLotFinished = false;
 
 var Lot = {
 	distance: 10000, //arbitrary long distance
@@ -196,6 +227,8 @@ var Lot = {
 
 
 ptolemy.closeLotCallback = function(response, status) {
+	console.log(ptolemy.reqStatusCount);
+
 	if(status != google.maps.DistanceMatrixStatus.OK) {
 		alert('Error was: ' + status);
 	} 
@@ -212,15 +245,15 @@ ptolemy.closeLotCallback = function(response, status) {
 					Lot.distance = results[j].distance.value;
 					Lot.distanceText = results[j].distance.text;
 					Lot.address = response.destinationAddresses[j];
+					ptolemy.closestLot = Lot;
 				}
 			}
 		}
-
-		ptolemy.closestLot = Lot;
 	}
 };
 
-ptolemy.calcDistance = function(origin, dest) {
+ptolemy.calcCloseLot = function(origin, dest) {
+	ptolemy.closeLotFinished = false;
 	var service = new google.maps.DistanceMatrixService();
 
 	//need to splice the parking to ensure URL not too long
@@ -258,10 +291,8 @@ ptolemy.calcDistance = function(origin, dest) {
 		console.log(ptolemy.reqStatusCount)
 		console.log(ptolemy.closestLot);
 		ptolemy.reqStatusCount = 0;
-		Lot.distance = 10000;
-		Lot.distanceText = "";
-		Lot.address = "";
 		clearInterval(wait);
+		ptolemy.closeLotFinished = true;
 		return ptolemy.closestLot;
 	}
 
