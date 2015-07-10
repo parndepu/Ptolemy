@@ -1,0 +1,58 @@
+CREATE DATABASE  IF NOT EXISTS `DI_hvn1` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `DI_hvn1`;
+-- MySQL dump 10.13  Distrib 5.6.13, for Win32 (x86)
+--
+-- Host: db1.cs.uakron.edu    Database: DI_hvn1
+-- ------------------------------------------------------
+-- Server version	5.5.43-0ubuntu0.12.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `PathPriority`
+--
+
+DROP TABLE IF EXISTS `PathPriority`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `PathPriority` (
+  `PathId` int(11) NOT NULL AUTO_INCREMENT,
+  `StreetName` varchar(255) NOT NULL,
+  `StartLat` float NOT NULL,
+  `StartLng` float NOT NULL,
+  `EndLat` float NOT NULL,
+  `EndLng` float NOT NULL,
+  `Priority` int(11) NOT NULL,
+  PRIMARY KEY (`PathId`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `PathPriority`
+--
+
+LOCK TABLES `PathPriority` WRITE;
+/*!40000 ALTER TABLE `PathPriority` DISABLE KEYS */;
+INSERT INTO `PathPriority` VALUES (9,'East Market St.',41.0797,-81.5033,41.0851,-81.517,5),(10,'East Exchange St.',41.0766,-81.5224,41.0711,-81.5036,5),(11,'University Ave.',41.0795,-81.5201,41.0771,-81.5145,5),(12,'Buchtel Ave.',41.0766,-81.5036,41.0781,-81.5145,5),(13,'East Mill St',41.0823,-81.517,41.0799,-81.5098,4),(14,'Brown St.',41.0625,-81.5098,41.0714,-81.5098,1),(15,'Sumner St.',41.0659,-81.5149,41.0731,-81.5135,-2),(16,'Main St.',41.0871,-81.5167,41.0695,-81.5265,3),(17,'S Broadway St.',41.0608,-81.5265,41.0841,-81.5146,3),(18,'Wolf Ledges Pkwy.',41.0629,-81.5201,41.0725,-81.52,3),(19,'Grant St. south',41.0629,-81.518,41.0702,-81.518,-5),(20,'Grant St.',41.0698,-81.518,41.0738,-81.5155,3),(21,'Lincoln St.',41.081,-81.5124,41.0793,-81.5124,-5),(22,'Orchard St.',41.0744,-81.5048,41.0744,-81.5061,-5),(23,'Vine St.',41.0735,-81.5048,41.0735,-81.5061,-5),(24,'Nash St.',41.0723,-81.5048,41.0723,-81.5062,-5),(25,'South College st.',41.0823,-81.5098,41.0778,-81.5112,3),(26,'Union St.',41.0815,-81.508,41.0778,-81.5092,2),(27,'Spicer St.',41.0765,-81.5061,41.0711,-81.5066,4),(28,'Spicer St. south',41.0709,-81.5067,41.0627,-81.5084,-2),(29,'Kling St',41.0628,-81.5115,41.0723,-81.5118,-4),(30,'Allun St',41.063,-81.5135,41.0726,-81.5126,-4),(31,'Sherman St.',41.0636,-81.5164,41.0735,-81.5146,-4),(32,'W. Cedar St.',41.0806,-81.5329,41.0755,-81.523,3);
+/*!40000 ALTER TABLE `PathPriority` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2015-05-02 14:01:47

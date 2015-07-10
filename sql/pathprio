@@ -1,9 +1,0 @@
-create table PathPriority (
-	PathId int primary key auto_increment,
-	Path_Name varchar(255) not null,
-	Start_Lat float not null,
-	Start_Lng float not null,
-	End_Lat float not null,
-	End_Lng float not null,
-	Priority int not null
-)

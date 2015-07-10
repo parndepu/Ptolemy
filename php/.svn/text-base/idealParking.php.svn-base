@@ -12,7 +12,20 @@ if($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * from CampusParkingLots";
+$dest_name= $_GET["dest"];
+
+$sql = 
+"select CampusParkingLots.Lot_num, CampusParkingLots.Address as LotAddress, 
+CampusParkingLots.Latitude, CampusParkingLots.Longitude,
+ParkingMapping.Priority, ParkingMapping.HasPermit, ParkingMapping.Meter
+from CampusBuildings 
+join ParkingMapping
+on CampusBuildings.BLDG_NO=ParkingMapping.BLDG_NO
+join CampusParkingLots
+on CampusParkingLots.Lot_num=ParkingMapping.Lot_num
+where CampusBuildings.BUILDING_NAME=\"" . $dest_name . "\"
+ORDER BY Priority DESC";
+
 $result = $conn->query($sql);
 
 $rows = array();

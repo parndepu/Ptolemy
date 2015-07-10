@@ -1,0 +1,46 @@
+@media print {
+	div, html, body {
+		overflow: visible;
+	}
+
+	#ptolemy-container {
+		overflow: visible;
+	}
+	#directions-panel {
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+
+	#driving-panel {
+		width: 100%;
+		display: block;
+		overflow: visible;
+	}
+	#driving-comments {
+		width: 100%;
+		display: block;
+		overflow: visible;
+	}
+
+	#walking-panel {
+		width: 100%;
+		display: block;
+		overflow: : visible;
+	}
+	#walking-directionsl {
+		width: 100%;
+		display: block;
+		overflow: : visible;
+	}
+	#control {
+		width:0;
+		height:0;
+	}
+	#map-canvas {
+		display: none;
+	}
+	#my-schedule {
+		display: none;
+	}
+}

@@ -5,24 +5,53 @@
 <meta charset="utf-8">
 <title>Ptolemy - Your Guide To the UA Campus</title>
   <link rel="stylesheet" href="css/ptolemy.css">
+  <link rel="stylesheet" href="css/ptolemyPrint.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYHPx26z6Z0LZbqy0rM-pjyELCG1hzIvU"></script>
+  <script src="js/jquery.ui.map.min.js"></script>
+  <script src="js/oms.min.js"></script>
   <script src="js/ptolemy.js"></script>
   <script>
 	google.maps.event.addDomListener(window, 'load', ptolemy.initialize);
+  function printPage() {
+    $('#control').hide();
+    window.print();
+    $('#control').show(); 
+  }
   </script>
 </head>
 <body>
 
 	<div id="control">
     <b>From: </b>
-    <input type="text" id="start" onchange="ptolemy.calcRoute();"></input>
+    <input type="text" id="start"></input>
+    <br />
+    <br />
     <b>To: </b>
     <select id="end" onchange="ptolemy.calcRoute();"></select>
+    <input type="button" onclick="ptolemy.calcRoute();" value="Go!">
+    <br />
+    Do you have a parking permit? <input type="checkbox" id="has-permit" value="true" onchange="ptolemy.calcRoute();">
+    <br/>
+    <a href="oncampus.html">On Campus Instructions >>></a>
   </div>
 
-  <div id="directions-panel"></div>
-  <div id="walking-drections-panel"></div>
+  <div id="directions-panel">
+<!--     <div id="ptolemy-streetview" style="width: 100%; height: 200px">
+    </div> -->
+    <div id="dest-pic">
+    </div>
+    <div id="driving-panel">
+      <h2>Driving Directions</h2>
+    </div>
+    <div id="driving-comments"></div>
+    <div id="walking-panel">
+      <h2>Walking Directions</h2>
+    </div>
+    <div id="walking-comments"></div>
+    <input type="button" value="Print" onclick="printPage();">
+  </div>
+  <div id="walking-directions-panel"></div>
   <div id="map-canvas"></div>
 
 </body>

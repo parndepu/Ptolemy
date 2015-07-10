@@ -1,0 +1,267 @@
+[
+  {
+    "Lot #":"1",
+    "Lot Name":"East Campus Parking Deck",
+    "Address":"450 East Buchtel Ave."
+  },
+  {
+    "Lot #":"2",
+    "Lot Name":"Rhodes Arena",
+    "Address":"382 Carroll St"
+  },
+  {
+    "Lot #":"3",
+    "Lot Name":"Fir Hill Lot",
+    "Address":"138 Buchtel Ave."
+  },
+  {
+    "Lot #":"4",
+    "Lot Name":"Delta Gamma Lot",
+    "Address":"394 Buchtel Common"
+  },
+  {
+    "Lot #":"5",
+    "Lot Name":"Wheeler Lot",
+    "Address":"344 Wheeler St."
+  },
+  {
+    "Lot #":"6",
+    "Lot Name":"InfoCision Stadium - Summa Field ",
+    "Address":"340 S Union St"
+  },
+  {
+    "Lot #":"7",
+    "Lot Name":"Kappa Kappa Gamma Sorority",
+    "Address":"475 Orchard St."
+  },
+  {
+    "Lot #":"8",
+    "Lot Name":"ONAT",
+    "Address":"438 Carroll St."
+  },
+  {
+    "Lot #":"9",
+    "Lot Name":"Spicer / Exchange",
+    "Address":"341 Spicer Street"
+  },
+  {
+    "Lot #":"10",
+    "Lot Name":"Field House",
+    "Address":"449 Vine/Spicer St."
+  },
+  {
+    "Lot #":"11",
+    "Lot Name":"Eshelman Building - Chima Family Center",
+    "Address":"S Forge St"
+  },
+  {
+    "Lot #":"12",
+    "Lot Name":"Greek Church Lot",
+    "Address":"129 South Union Street"
+  },
+  {
+    "Lot #":"13",
+    "Lot Name":"Phi Delta Theta Frat.",
+    "Address":"431 Carroll St."
+  },
+  {
+    "Lot #":"14",
+    "Lot Name":"Union St.",
+    "Address":"151 E. Buchtel Ave."
+  },
+  {
+    "Lot #":"15",
+    "Lot Name":"Olin Hall",
+    "Address":"160 E. Buchtel Ave."
+  },
+  {
+    "Lot #":"18",
+    "Lot Name":"Student Union",
+    "Address":"240 Carroll St"
+  },
+  {
+    "Lot #":"19",
+    "Lot Name":"Day Care Ctr.",
+    "Address":"108 Fir Hill"
+  },
+  {
+    "Lot #":"20",
+    "Lot Name":"Methodist Church",
+    "Address":"263 East Mill St."
+  },
+  {
+    "Lot #":"21",
+    "Lot Name":"Roadway Bldg.",
+    "Address":"71 South College St."
+  },
+  {
+    "Lot #":"22",
+    "Lot Name":"Ritchie Residence Hall",
+    "Address":"204 South College St."
+  },
+  {
+    "Lot #":"23",
+    "Lot Name":"UAPD",
+    "Address":"116 South College St."
+  },
+  {
+    "Lot #":"24",
+    "Lot Name":"Central Hower",
+    "Address":"136 South College St."
+  },
+  {
+    "Lot #":"25 ",
+    "Lot Name":"Robertson Deck (Visitor A-Lot)",
+    "Address":"256 East Buchtel Ave."
+  },
+  {
+    "Lot #":"26",
+    "Lot Name":"North Campus Parking Deck",
+    "Address":"255 East Buchtel Ave."
+  },
+  {
+    "Lot #":"27",
+    "Lot Name":"North Campus Lot - Guzzetta",
+    "Address":"215 East Buchtel Ave."
+  },
+  {
+    "Lot #":"28",
+    "Lot Name":"EJ Thomas Deck",
+    "Address":"198 Hill St."
+  },
+  {
+    "Lot #":"29",
+    "Lot Name":"Olsen Research",
+    "Address":"200 South Forge St."
+  },
+  {
+    "Lot #":"30",
+    "Lot Name":"College/Market",
+    "Address":"31 S. College St."
+  },
+  {
+    "Lot #":"32",
+    "Lot Name":"Former Ballet Center",
+    "Address":"24 Fir Hill"
+  },
+  {
+    "Lot #":"34",
+    "Lot Name":"Computer Center",
+    "Address":"275 Wolf Ledges"
+  },
+  {
+    "Lot #":"36",
+    "Lot Name":"South Campus Parking Deck",
+    "Address":"261 E. Exchange St."
+  },
+  {
+    "Lot #":"37",
+    "Lot Name":"Schrank Deck",
+    "Address":"240 Carroll St."
+  },
+  {
+    "Lot #":"39",
+    "Lot Name":"Exchange St. Deck",
+    "Address":"207 East Exchange St."
+  },
+  {
+    "Lot #":"40",
+    "Lot Name":"Mill / Lincoln",
+    "Address":"Lincoln St. near 197 E Mill St"
+  },
+  {
+    "Lot #":"43",
+    "Lot Name":"Turbine Building",
+    "Address":"220 Wolf Ledges Pkwy."
+  },
+  {
+    "Lot #":"44",
+    "Lot Name":"Grant Residence Hall",
+    "Address":"151 Wheeler St."
+  },
+  {
+    "Lot #":"45",
+    "Lot Name":"Lincoln Building",
+    "Address":"Lincoln and South Forge St."
+  },
+  {
+    "Lot #":"46",
+    "Lot Name":"Gallucci Residence Hall",
+    "Address":"200 East Exchange St."
+  },
+  {
+    "Lot #":"47",
+    "Lot Name":"Folk Hall",
+    "Address":"150 East Exchange St."
+  },
+  {
+    "Lot #":"49",
+    "Lot Name":"West Campus Parking Deck",
+    "Address":"275 South High St."
+  },
+  {
+    "Lot #":"50",
+    "Lot Name":"Hower House",
+    "Address":"60 Fir Hill St."
+  },
+  {
+    "Lot #":"52",
+    "Lot Name":"Paul martin Ctr.",
+    "Address":"105 Fir Hill St."
+  },
+  {
+    "Lot #":"54",
+    "Lot Name":"The Chapel Lot",
+    "Address":"Chapel Dr."
+  },
+  {
+    "Lot #":"56",
+    "Lot Name":"BCCE Turnaround",
+    "Address":"220 Wolf Ledges Pkwy"
+  },
+  {
+    "Lot #":"57",
+    "Lot Name":"JAR Arena Circle",
+    "Address":"373 Carroll St."
+  },
+  {
+    "Lot #":"60",
+    "Lot Name":"Polymer Training Center",
+    "Address":"225 East Mill St."
+  },
+  {
+    "Lot #":"61",
+    "Lot Name":"Broadway Building",
+    "Address":"277 South Broadway"
+  },
+  {
+    "Lot #":"62",
+    "Lot Name":"CBA Lot",
+    "Address":"289 South Broadway"
+  },
+  {
+    "Lot #":"66",
+    "Lot Name":"Grismers",
+    "Address":"278 South High St."
+  },
+  {
+    "Lot #":"69",
+    "Lot Name":"PFOC",
+    "Address":"201 South Forge st."
+  },
+  {
+    "Lot #":"70 North",
+    "Lot Name":"Quaker Square",
+    "Address":"88 Summit St."
+  },
+  {
+    "Lot #":"70 South",
+    "Lot Name":"Quaker Square",
+    "Address":"135 South Broadway"
+  },
+  {
+    "Lot #":"71",
+    "Lot Name":"Administration Building",
+    "Address":"36 South college St."
+  }
+]

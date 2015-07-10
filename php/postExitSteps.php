@@ -12,7 +12,15 @@ if($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * from CampusParkingLots";
+$highwayid = $_GET["highwayid"];
+
+$sql = 
+"select AfterExitRoute.Step, AfterExitRoute.Street 
+from AfterExitRoute join HighwayExits 
+on AfterExitRoute.IdHighwayExits=HighwayExits.IdHighwayExits
+where HighwayExits.IdHighwayExits=" . $highwayid .
+" order by AfterExitRoute.Step ASC";
+
 $result = $conn->query($sql);
 
 $rows = array();

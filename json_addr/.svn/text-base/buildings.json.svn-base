@@ -1,0 +1,688 @@
+[
+  {
+    "BLDG NO":9124,
+    "BUILDING NAME":"122 South College (Trecaso's)",
+    "ABB":"TRE",
+    "STREET ADDRESS":"122 College Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9002,
+    "BUILDING NAME":"178 South Forge Street (Wonder Bread)",
+    "ABB":"WBB",
+    "STREET ADDRESS":"178 South Forge Street ",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6030,
+    "BUILDING NAME":"32 South College (Superior Auto Service)",
+    "ABB":"SUP",
+    "STREET ADDRESS":"32 South College Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9030,
+    "BUILDING NAME":"464 Carroll Street (TKE Fraternity Lease )",
+    "ABB":"CSBL",
+    "STREET ADDRESS":"464 Carroll Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":5006,
+    "BUILDING NAME":"Administrative Services Building",
+    "ABB":"ASB",
+    "STREET ADDRESS":"185 East Mill",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9411,
+    "BUILDING NAME":"Akron Innovation Campus North",
+    "ABB":"AICN",
+    "STREET ADDRESS":"411 Wolf Ledges",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9441,
+    "BUILDING NAME":"Akron Innovation Campus South",
+    "ABB":"AICS",
+    "STREET ADDRESS":"441 Wolf Ledges ",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9087,
+    "BUILDING NAME":"Akron Polymer Training Center  (Foundation)",
+    "ABB":"APTC",
+    "STREET ADDRESS":"225 E. Mill Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1501,
+    "BUILDING NAME":"Auburn Science & Engineering Ctr.",
+    "ABB":"ASEC",
+    "STREET ADDRESS":"235 Carroll Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1204,
+    "BUILDING NAME":"Ayer Hall",
+    "ABB":"AYER",
+    "STREET ADDRESS":"250 Buchtel Common",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1102,
+    "BUILDING NAME":"Ballet Center",
+    "ABB":"BC",
+    "STREET ADDRESS":"354 East Market Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1910,
+    "BUILDING NAME":"Barnett Hoover Farm House",
+    "ABB":"WCBH",
+    "STREET ADDRESS":"1901 Smucker Road, Orrville",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6014,
+    "BUILDING NAME":"Bath Nature Preserve",
+    "ABB":"BNP",
+    "STREET ADDRESS":"4240 Ira Road",
+    "Lot":""
+  },
+  {
+    "BLDG NO":3002,
+    "BUILDING NAME":"Bierce Library",
+    "ABB":"LIB",
+    "STREET ADDRESS":"315 Buchtel Common",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1705,
+    "BUILDING NAME":"Buchtel Field Tennis Facility",
+    "ABB":"BFTF",
+    "STREET ADDRESS":"322 Wheeler Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":4001,
+    "BUILDING NAME":"Buchtel Hall",
+    "ABB":"BH",
+    "STREET ADDRESS":"302 Buchtel Common",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1902,
+    "BUILDING NAME":"Buckingham Building",
+    "ABB":"BCCE",
+    "STREET ADDRESS":"220 Wolf Ledges Parkway",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7007,
+    "BUILDING NAME":"Bulger Hall",
+    "ABB":"BRH",
+    "STREET ADDRESS":"265 Buchtel Common",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1002,
+    "BUILDING NAME":"Business Admin. Bldg.",
+    "ABB":"CBA",
+    "STREET ADDRESS":"259 S. Broadway Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9079,
+    "BUILDING NAME":"Carriage House",
+    "ABB":"CARR",
+    "STREET ADDRESS":"60 Fir Hill",
+    "Lot":""
+  },
+  {
+    "BLDG NO":5003,
+    "BUILDING NAME":"Center For Child Development",
+    "ABB":"CCD",
+    "STREET ADDRESS":"108 Fir Hill",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9040,
+    "BUILDING NAME":"Central Hower Community School",
+    "ABB":"CHCS",
+    "STREET ADDRESS":"145 S. College Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9099,
+    "BUILDING NAME":"Chilled Water Storage Tank",
+    "ABB":"TANK",
+    "STREET ADDRESS":"S. Forge St.",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9020,
+    "BUILDING NAME":"Chima Family Center",
+    "ABB":"CFC",
+    "STREET ADDRESS":"27 South Forge Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1306,
+    "BUILDING NAME":"College of Arts and Sciences",
+    "ABB":"CAS",
+    "STREET ADDRESS":"290 E. Buchtel Ave.",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6017,
+    "BUILDING NAME":"Computer Center",
+    "ABB":"COMP",
+    "STREET ADDRESS":"185 Carroll Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1201,
+    "BUILDING NAME":"Crouse Hall",
+    "ABB":"CRH",
+    "STREET ADDRESS":"252 Buchtel Common",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6009,
+    "BUILDING NAME":"Electric Substation",
+    "ABB":"ESUB",
+    "STREET ADDRESS":"152 Carroll Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6013,
+    "BUILDING NAME":"Exchange Parking Deck",
+    "ABB":"EXPD",
+    "STREET ADDRESS":"207 East Exchange Street",
+    "Lot":"Lot 39"
+  },
+  {
+    "BLDG NO":7008,
+    "BUILDING NAME":"Exchange Street Residence Hall",
+    "ABB":"EXC",
+    "STREET ADDRESS":"180 East Exchange Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1903,
+    "BUILDING NAME":"Express Building",
+    "ABB":"EB",
+    "STREET ADDRESS":"250 Wolf Ledges Parkway",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6050,
+    "BUILDING NAME":"FirstEnergy Stadium - Cub Cadet Field",
+    "ABB":"FES",
+    "STREET ADDRESS":"300 Carroll Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1108,
+    "BUILDING NAME":"Folk Hall",
+    "ABB":"FOLK",
+    "STREET ADDRESS":"150 East Exchange Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6022,
+    "BUILDING NAME":"Forge St. Substation",
+    "ABB":"FSUB",
+    "STREET ADDRESS":"270 South Forge Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7021,
+    "BUILDING NAME":"Gallucci Hall (N)",
+    "ABB":"GALU",
+    "STREET ADDRESS":"360 Grant Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7020,
+    "BUILDING NAME":"Gallucci Hall (S)",
+    "ABB":"GALL",
+    "STREET ADDRESS":"360 Grant Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1507,
+    "BUILDING NAME":"Gas Turbine Testing Facility",
+    "ABB":"GTTF",
+    "STREET ADDRESS":"280 Wolf Ledges Parkway",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1505,
+    "BUILDING NAME":"Goodyear Polymer Ctr.",
+    "ABB":"GDYR",
+    "STREET ADDRESS":"170 University Avenue",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7013,
+    "BUILDING NAME":"Grant High Rise",
+    "ABB":"GRC",
+    "STREET ADDRESS":"151 Wheeler Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1106,
+    "BUILDING NAME":"Guzzetta Hall",
+    "ABB":"GH",
+    "STREET ADDRESS":"157 University Avenue",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1109,
+    "BUILDING NAME":"Guzzetta Hall Addition",
+    "ABB":"GHAD",
+    "STREET ADDRESS":"Buchtel Ave. side of Guzzetta Hall",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6024,
+    "BUILDING NAME":"Hazardous Material Storage Building",
+    "ABB":"HMST",
+    "STREET ADDRESS":"180 Buchtel Common",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6021,
+    "BUILDING NAME":"Heisman Lodge",
+    "ABB":"HEIS",
+    "STREET ADDRESS":"800 George Washington",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7001,
+    "BUILDING NAME":"Honors Complex",
+    "ABB":"HCPX",
+    "STREET ADDRESS":"180 South College Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9077,
+    "BUILDING NAME":"Hower House",
+    "ABB":"HOW",
+    "STREET ADDRESS":"60 Fir Hill",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6040,
+    "BUILDING NAME":"Info Cision Stadium/Summa Field",
+    "ABB":"ICS",
+    "STREET ADDRESS":"375 East Exchange",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6011,
+    "BUILDING NAME":"Jackson Field Storage Bldg.",
+    "ABB":"JFST",
+    "STREET ADDRESS":"310 S. Union St.",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1703,
+    "BUILDING NAME":"James A. Rhodes Health & P.E. Bldg.",
+    "ABB":"JAR",
+    "STREET ADDRESS":"373 Carroll Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1202,
+    "BUILDING NAME":"Knight Chemical Lab.",
+    "ABB":"KNCL",
+    "STREET ADDRESS":"190 Buchtel Common",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1101,
+    "BUILDING NAME":"Kolbe Hall",
+    "ABB":"KO",
+    "STREET ADDRESS":"328 Buchtel Common",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1301,
+    "BUILDING NAME":"Leigh Hall",
+    "ABB":"LH",
+    "STREET ADDRESS":"308 Buchtel Common",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9083,
+    "BUILDING NAME":"Lincoln Bldg.",
+    "ABB":"LINC",
+    "STREET ADDRESS":"100 Lincoln Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":5005,
+    "BUILDING NAME":"Louis and Freda Stile Athl Fld Hse",
+    "ABB":"AFLD",
+    "STREET ADDRESS":"289 South Union Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":5502,
+    "BUILDING NAME":"Martin University Center (Vacated 9/2013)",
+    "ABB":"PMUC",
+    "STREET ADDRESS":"105 Fir Hill",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1702,
+    "BUILDING NAME":"Mary Gladwin Hall",
+    "ABB":"MGH",
+    "STREET ADDRESS":"209 Carroll Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1001,
+    "BUILDING NAME":"McDowell Law Center",
+    "ABB":"LAW",
+    "STREET ADDRESS":"150 University Avenue",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1909,
+    "BUILDING NAME":"Medina County University Center",
+    "ABB":"MCUC",
+    "STREET ADDRESS":"6300 Technology Lane Medina, Ohio 44358                                                                                                      ",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1508,
+    "BUILDING NAME":"National Polymer Innovation Center",
+    "ABB":"NPIC",
+    "STREET ADDRESS":"240 South Forge Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1704,
+    "BUILDING NAME":"Ocasek Natatorium",
+    "ABB":"ONAT",
+    "STREET ADDRESS":"402 Carroll Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1304,
+    "BUILDING NAME":"Olin Hall",
+    "ABB":"OLIN",
+    "STREET ADDRESS":"361 Buchtel Common",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1107,
+    "BUILDING NAME":"Olson Research Center",
+    "ABB":"OLRC",
+    "STREET ADDRESS":"260 South Forge Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7002,
+    "BUILDING NAME":"Orr Resident Hall",
+    "ABB":"ORH",
+    "STREET ADDRESS":"188 South College Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6025,
+    "BUILDING NAME":"Parking Deck, East",
+    "ABB":"PDE",
+    "STREET ADDRESS":"450 E. Buchtel Ave.",
+    "Lot":"Lot 1"
+  },
+  {
+    "BLDG NO":6026,
+    "BUILDING NAME":"Parking Deck, North",
+    "ABB":"PDN",
+    "STREET ADDRESS":"255 E. Buchtel Ave.",
+    "Lot":"Lot 26"
+  },
+  {
+    "BLDG NO":6010,
+    "BUILDING NAME":"Physical Fac. Operations Ctr.",
+    "ABB":"PFOC",
+    "STREET ADDRESS":"146 Hill Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":5002,
+    "BUILDING NAME":"Polsky Building",
+    "ABB":"POL",
+    "STREET ADDRESS":"225 S. Main Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1506,
+    "BUILDING NAME":"Polymer Eng. Academic Center",
+    "ABB":"PEAC",
+    "STREET ADDRESS":"250 S. Forge St.",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7024,
+    "BUILDING NAME":"President's Residence",
+    "ABB":"PRES",
+    "STREET ADDRESS":"465 Burning Tree Drive",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7009,
+    "BUILDING NAME":"Quaker Square",
+    "ABB":"QSQR",
+    "STREET ADDRESS":"135 South Broadway Akron, Ohio 44308",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7004,
+    "BUILDING NAME":"Ritchie Hall",
+    "ABB":"RRH",
+    "STREET ADDRESS":"269 Buchtel Common",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9001,
+    "BUILDING NAME":"Roadway Building",
+    "ABB":"RDWY",
+    "STREET ADDRESS":"73 South College Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6001,
+    "BUILDING NAME":"Robertson Hall",
+    "ABB":"RD",
+    "STREET ADDRESS":"248 E. Buchtel Avenue",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1502,
+    "BUILDING NAME":"Schrank Hall (North)",
+    "ABB":"SHN",
+    "STREET ADDRESS":"240 Carroll Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1504,
+    "BUILDING NAME":"Schrank Hall (South)",
+    "ABB":"SHS",
+    "STREET ADDRESS":"240 Carroll Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":4002,
+    "BUILDING NAME":"Simmons Hall",
+    "ABB":"SI",
+    "STREET ADDRESS":"277 E. Buchtel Ave.",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7005,
+    "BUILDING NAME":"Sisler-McFawn",
+    "ABB":"SMRH",
+    "STREET ADDRESS":"211 Buchtel Common",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6027,
+    "BUILDING NAME":"South Campus Parking Deck",
+    "ABB":"PDS",
+    "STREET ADDRESS":"261 East Exchange",
+    "Lot":"Lot 36"
+  },
+  {
+    "BLDG NO":7028,
+    "BUILDING NAME":"South Hall",
+    "ABB":"SH",
+    "STREET ADDRESS":"353 Grant Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7003,
+    "BUILDING NAME":"Spanton Hall",
+    "ABB":"SRH",
+    "STREET ADDRESS":"190 South College Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7022,
+    "BUILDING NAME":"Spicer Residence Hall",
+    "ABB":"SPCR",
+    "STREET ADDRESS":"290 Spicer Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1205,
+    "BUILDING NAME":"Steiner Woods",
+    "ABB":"STWD",
+    "STREET ADDRESS":"3675 La Mesa Drive Akron OH 44333",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1907,
+    "BUILDING NAME":"Student Life Building",
+    "ABB":"SLB",
+    "STREET ADDRESS":"1901 Smucker Road, Orrville",
+    "Lot":""
+  },
+  {
+    "BLDG NO":5004,
+    "BUILDING NAME":"Student Recreation and Wellness Center",
+    "ABB":"SRWC",
+    "STREET ADDRESS":"382 Carroll Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":5007,
+    "BUILDING NAME":"Student Union",
+    "ABB":"STUN",
+    "STREET ADDRESS":"303 Carroll Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9140,
+    "BUILDING NAME":"The University of Akron Lakewood",
+    "ABB":"UALW",
+    "STREET ADDRESS":"14725 Detroit Ave. Lakewood OH 44107",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1104,
+    "BUILDING NAME":"Thomas Performing Arts Hall",
+    "ABB":"PAH",
+    "STREET ADDRESS":"198 Hill Street",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7014,
+    "BUILDING NAME":"Townhouse A",
+    "ABB":"THA",
+    "STREET ADDRESS":"371, 373, 375, 377 Grant",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7014,
+    "BUILDING NAME":"Townhouse B",
+    "ABB":"THB",
+    "STREET ADDRESS":"380, 382, 384 Sherman",
+    "Lot":""
+  },
+  {
+    "BLDG NO":7014,
+    "BUILDING NAME":"Townhouse C",
+    "ABB":"THC",
+    "STREET ADDRESS":"386, 388, 390, 392 Sherman",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1509,
+    "BUILDING NAME":"U of A Engineering Research Center",
+    "ABB":"AERC",
+    "STREET ADDRESS":"264 Wolf Ledges Parkway",
+    "Lot":""
+  },
+  {
+    "BLDG NO":9495,
+    "BUILDING NAME":"University Akron Research Foundation",
+    "ABB":"UARF",
+    "STREET ADDRESS":"495 Wolf Ledges Parkway Akron 44311",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1901,
+    "BUILDING NAME":"Wayne College & Boyer H.P.E. Bldg.",
+    "ABB":"UAWC",
+    "STREET ADDRESS":"1901 Smucker Road, Orrville",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1908,
+    "BUILDING NAME":"Wayne College @ Holmes County Higher Ed Ctr",
+    "ABB":"WCHC",
+    "STREET ADDRESS":"Millersburg, OH",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1906,
+    "BUILDING NAME":"Wayne College Maint. Bldg.",
+    "ABB":"WMB",
+    "STREET ADDRESS":"1901 Smucker Road, Orrville",
+    "Lot":""
+  },
+  {
+    "BLDG NO":6020,
+    "BUILDING NAME":"West Campus Parking Deck",
+    "ABB":"WCPD",
+    "STREET ADDRESS":"275 S. High Street",
+    "Lot":"Lot 49"
+  },
+  {
+    "BLDG NO":1105,
+    "BUILDING NAME":"West Hall",
+    "ABB":"WEST",
+    "STREET ADDRESS":"225 Wolf Ledges Parkway",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1503,
+    "BUILDING NAME":"Whitby Hall",
+    "ABB":"WHIT",
+    "STREET ADDRESS":"200 Buchtel Common",
+    "Lot":""
+  },
+  {
+    "BLDG NO":1401,
+    "BUILDING NAME":"Zook Hall",
+    "ABB":"ZOOK",
+    "STREET ADDRESS":"276 Buchtel Common",
+    "Lot":""
+  }
+]

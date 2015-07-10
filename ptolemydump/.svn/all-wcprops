@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump
+END
+DI_hvn1_PathPriority.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_PathPriority.sql
+END
+DI_hvn1_DownTownRoute.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_DownTownRoute.sql
+END
+DI_hvn1_WestRoute.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_WestRoute.sql
+END
+DI_hvn1_WeekendRoute.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_WeekendRoute.sql
+END
+DI_hvn1_DavesSupermarketRoute.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_DavesSupermarketRoute.sql
+END
+DI_hvn1_SnowRoute.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_SnowRoute.sql
+END
+DI_hvn1_CampusParkingLots.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_CampusParkingLots.sql
+END
+DI_hvn1_ParkingMapping.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_ParkingMapping.sql
+END
+DI_hvn1_AfterExitRoute.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_AfterExitRoute.sql
+END
+DI_hvn1_HighwayExits.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_HighwayExits.sql
+END
+DI_hvn1_DrivingPlan.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_DrivingPlan.sql
+END
+DI_hvn1_SouthRoute.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_SouthRoute.sql
+END
+DI_hvn1_ChapelHillRoute.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_ChapelHillRoute.sql
+END
+DI_hvn1_NorthEastRoute.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_NorthEastRoute.sql
+END
+DI_hvn1_CampusBuildings.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/ptolemydump/DI_hvn1_CampusBuildings.sql
+END

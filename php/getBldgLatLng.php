@@ -12,7 +12,13 @@ if($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * from CampusParkingLots";
+$bldg_name = $_GET["bldg_name"];
+
+$sql = 
+"select Latitude, Longitude
+from CampusBuildings
+where BUILDING_NAME=\"" . $bldg_name . "\"";
+
 $result = $conn->query($sql);
 
 $rows = array();
@@ -23,7 +29,7 @@ if($result->num_rows > 0) {
 	}
 }
 else {
-	echo "0 results";
+	echo "";
 }
 
 $conn->close();

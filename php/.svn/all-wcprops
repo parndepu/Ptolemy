@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/php
+END
+getRooRoutes.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/php/getRooRoutes.php
+END
+getBldgPic.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/php/getBldgPic.php
+END
+entrypoints
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/php/entrypoints
+END
+getBldgLatLng.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/php/getBldgLatLng.php
+END
+idealParking.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/php/idealParking.php
+END
+parking.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/php/parking.php
+END
+highwayExits.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/php/highwayExits.php
+END
+filteredPaths.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/php/filteredPaths.php
+END
+postExitSteps.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/php/postExitSteps.php
+END
+buildings.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ptolemy-svn/!svn/ver/13/ptolemy/php/buildings.php
+END
